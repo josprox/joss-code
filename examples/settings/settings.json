@@ -1,0 +1,23 @@
+{
+  "theme": "dark",
+  "fontFamily": "Cascadia Mono",
+  "fontSize": 14,
+  "tabSize": 2,
+  "wordWrap": false,
+  "autoSave": false,
+  "defaultTerminal": null,
+  "lspServers": {
+    "dart": "dart language-server --protocol=lsp",
+    "typescript": "typescript-language-server --stdio",
+    "python": "pylsp",
+    "csharp": "csharp-ls"
+  },
+  "enabledExtensions": [],
+  "keybindings": {
+    "editor.save": "Ctrl+S",
+    "workbench.commandPalette": "Ctrl+Shift+P"
+  },
+  "trustedWorkspaces": [],
+  "recentWorkspaces": [],
+  "colorOverrides": {}
+}

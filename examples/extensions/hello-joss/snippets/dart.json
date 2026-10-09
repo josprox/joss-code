@@ -1,0 +1,16 @@
+{
+  "Consumer Widget": {
+    "prefix": "consumerWidget",
+    "body": [
+      "class ${1:MyWidget} extends ConsumerWidget {",
+      "  const ${1:MyWidget}({super.key});",
+      "",
+      "  @override",
+      "  Widget build(BuildContext context, WidgetRef ref) {",
+      "    return ${2:const SizedBox.shrink()};",
+      "  }",
+      "}"
+    ],
+    "description": "Create a Riverpod ConsumerWidget."
+  }
+}

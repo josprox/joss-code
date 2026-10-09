@@ -1,0 +1,65 @@
+{
+  "name": "hello-joss",
+  "displayName": "Hello Joss",
+  "publisher": "joss",
+  "version": "0.1.0",
+  "description": "Example extension manifest for Joss Code.",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "activationEvents": [
+    "onStartupFinished",
+    "onCommand:helloJoss.sayHello",
+    "onLanguage:josslang"
+  ],
+  "contributes": {
+    "commands": [
+      {
+        "command": "helloJoss.sayHello",
+        "title": "Hello Joss: Say Hello",
+        "category": "Hello Joss"
+      }
+    ],
+    "languages": [
+      {
+        "id": "josslang",
+        "aliases": [
+          "Joss Language"
+        ],
+        "extensions": [
+          ".joss"
+        ]
+      }
+    ],
+    "snippets": [
+      {
+        "language": "dart",
+        "path": "./snippets/dart.json"
+      }
+    ],
+    "themes": [
+      {
+        "label": "Joss Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/joss-dark-color-theme.json"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "helloJoss.sayHello",
+        "key": "ctrl+alt+h",
+        "when": "editorTextFocus"
+      }
+    ],
+    "configuration": {
+      "title": "Hello Joss",
+      "properties": {
+        "helloJoss.enabled": {
+          "type": "boolean",
+          "default": true,
+          "description": "Enable Hello Joss commands."
+        }
+      }
+    }
+  }
+}

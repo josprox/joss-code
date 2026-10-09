@@ -1,0 +1,26 @@
+{
+  "name": "Joss Dark",
+  "type": "dark",
+  "colors": {
+    "activityBar.background": "#181818",
+    "sideBar.background": "#202020",
+    "editor.background": "#1E1E1E",
+    "panel.background": "#181818",
+    "statusBar.background": "#007ACC"
+  },
+  "tokenColors": [
+    {
+      "scope": "keyword",
+      "settings": {
+        "foreground": "#3AA0FF",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "scope": "string",
+      "settings": {
+        "foreground": "#CE9178"
+      }
+    }
+  ]
+}
